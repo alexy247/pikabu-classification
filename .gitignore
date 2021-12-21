@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+__pycache__/
+
+# MacOs
+.DS_Store
+
+EDA/
+*/*.csv
