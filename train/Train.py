@@ -49,10 +49,10 @@ def binary_relevance(x_train, y_train, x_test, y_test):
     classifier = BinaryRelevance(GaussianNB())
 
     start_time = datetime.datetime.now()
-    # classifier.fit(x_train, y_train)
+    classifier.fit(x_train, y_train)
 
-    # predictions = classifier.predict(x_test)
-    # print('Accuracy is {}'.format(accuracy_score(y_test,predictions)))
+    predictions = classifier.predict(x_test)
+    print('Accuracy is {}'.format(accuracy_score(y_test,predictions)))
     final_time = datetime.datetime.now()
     print('Time: {}'.format(final_time-start_time))
 
@@ -61,19 +61,19 @@ def classifier_chain(x_train, y_train, x_test, y_test):
     classifier = ClassifierChain(LogisticRegression())
 
     start_time = datetime.datetime.now()
-    # classifier.fit(x_train, y_train)
-    # predictions = classifier.predict(x_test)
-    # print('Accuracy is {}'.format(accuracy_score(y_test,predictions)))
+    classifier.fit(x_train, y_train)
+    predictions = classifier.predict(x_test)
+    print('Accuracy is {}'.format(accuracy_score(y_test,predictions)))
     final_time = datetime.datetime.now()
     print('Time: {}'.format(final_time-start_time))
 
 def label_powerset(x_train, y_train, x_test, y_test):
     classifier = LabelPowerset(LogisticRegression())
     start_time = datetime.datetime.now()
-    # classifier.fit(x_train, y_train)
+    classifier.fit(x_train, y_train)
 
-    # predictions = classifier.predict(x_test)
-    # print('Accuracy is {}'.format(accuracy_score(y_test,predictions)))
+    predictions = classifier.predict(x_test)
+    print('Accuracy is {}'.format(accuracy_score(y_test,predictions)))
     final_time = datetime.datetime.now()
     print('Time: {}'.format(final_time-start_time))
 
